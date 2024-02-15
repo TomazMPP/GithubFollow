@@ -204,7 +204,7 @@ a {
 @media only screen and (max-width: 600px) {
   .usuarios {
     width: 100%;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   h2 {
