@@ -201,4 +201,26 @@ a {
   transition-duration: 1.5s;
 }
 
+@media only screen and (max-width: 600px) {
+  .usuarios {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .usuarios {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
 </style>
