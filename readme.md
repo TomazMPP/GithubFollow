@@ -13,10 +13,12 @@
 <b>(PT-BR) Desenvolvi esta aplicação usando Vue3, permitindo que você identifique quem você segue no GitHub, mas que não te segue de volta. A aplicação utiliza a API oficial do GitHub e, embora seja uma versão inicial, já está funcional. Esta experiência foi crucial para solidificar alguns conceitos no Vue, enquanto proporciona prática diária na linguagem. A motivação para criar essa aplicação surgiu da minha curiosidade em saber quais das pessoas que sigo no GitHub não me seguem de volta, transformando a ideia em uma ferramenta acessível para qualquer usuário realizar essa verificação.</b>
 </p>
 <p align="center">
-    <video width="800" style="border-radius: 20px" controls>
-  <source src="/public/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> <br>
+
+
+https://github.com/TomazMPP/GithubFollow/assets/94735704/03a9df8d-50bd-428d-a3d8-4a531abbce79
+
+
+ <br>
    <img width="800" style="border-radius: 20px" src="/public/1.png" /> <br>
     <img width="800" style="border-radius: 20px" src="/public/2.png" /> <br>
    <img width="400" style="border-radius: 20px" src="/public/phone.jpg" />
