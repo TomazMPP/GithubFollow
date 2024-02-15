@@ -33,6 +33,7 @@ h1 {
 .divUser {
     align-self: center;
     text-align: center;
+    width: 100%;
 }
 
 .input {

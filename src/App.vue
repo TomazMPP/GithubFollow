@@ -1,14 +1,38 @@
 <template>
-  <div id="main">
+  <div  :class="{ centered: showUserDetails }" id="main">
     <UserDetails @submit="showFollowingUsers" v-if="showUserDetails" />
     
     <div v-else>
       <div class="seguidores">
       <h2>PEOPLE THAT DON'T FOLLOW YOU BACK:</h2>
       <div class="usuarios">
+        <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p><p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p><p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p><p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p><p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p><p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p><p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p><p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
+    <p>AAAAAAAAAAAAAAAAAAAA</p>
         <div v-for="user in NonFollow" :key="user">
   <a :href="'https://github.com/' + user.login" target="_blank">
-    
     <p><img :src="user.avatar_url" alt="avatar" class="avatar"> {{ user.login }}</p>
   </a>
     </div>
@@ -106,6 +130,18 @@ export default {
 
 
 <style scoped>
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centered {
+  align-items: center;
+  min-height: 100vh;
+}
+
 h2 {
     font-size: 30px;
     font-weight: 800;
@@ -123,9 +159,11 @@ align-items: center;
     background-color: rgb(155, 81, 81);
     border-radius: 10px;
     margin: 2%;
-    width: 80%;
+
+    width: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
 }
 
 a {
@@ -205,10 +243,11 @@ a {
   .usuarios {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
