@@ -7,7 +7,7 @@
       <h2>PEOPLE THAT DON'T FOLLOW YOU BACK:</h2>
       <div class="usuarios">
         <div v-for="user in NonFollow" :key="user">
-  <a :href="'https://github.com/' + user" target="_blank">
+  <a :href="'https://github.com/' + user.login" target="_blank">
     
     <p><img :src="user.avatar_url" alt="avatar" class="avatar"> {{ user.login }}</p>
   </a>
